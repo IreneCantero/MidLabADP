@@ -25,6 +25,5 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v2
       with:
-        context: app
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME_MIDLABADP }}/my_app:latest
+        tags: ${{ secrets.DOCKERHUB_USERNAME_MIDLABADP }}/mid_lab_adp:latest
